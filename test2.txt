@@ -1,0 +1,48 @@
+program
+	  salary : integer ;                    /* ; instead of ,  */ 
+
+        i : int ,                             /* int instead of integer  */
+
+        max_size : integer const := 20 ,
+
+	  pi : real cons := 3.14 ,              /* cons instead of const  */
+
+        matrix[10, max_size] : real ,
+
+        minus_one : integer const := -1 ,     /* only unsigned numbers allowed  */
+
+        division_by_zero : exception;         /* redundant ; */
+start
+     i = 0;
+
+     salary := array_size mod 2 ;;            /* double ;  */
+
+     salary - taxes := salary;                /* expression on the right side of := not allowed */
+
+     a[i+1;5] := i+1;                         /* ; instead of , between indeces */
+
+     matrix[low_bound, sequence[n-1] := pi;   /* missing one ] on the left side */
+
+     salary == 1000;                          /* == instead of :=   */
+
+     when upper_bound 1= max_size+1           /*  1=  instead of  !=   */
+     do
+         raise division_by_zero;
+         i++                                  /*  ++ is not a legal operation in the language */
+     otherwise 
+                                              /* should be non-empty commands here  */
+     done;
+
+     cycle
+         cycle
+              {j : integer , k : integer
+              start
+                  raise exception ;           /* exception is a keyword; should be id here */
+                  k = k + a[i+1,5] 
+              }
+         until max_int > a[6, i+1] + matrix[low_bound, sequence[n mod 3]] ;
+         end_cycle ;
+         { start j = j - 5.67}                /* should be non-empty definitions before start */ 
+     until a[i+1] <= 0                         /* in condition, only id can appear before comparison */   
+     /* missing end_cycle here */            
+end
